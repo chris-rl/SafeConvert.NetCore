@@ -1,7 +1,7 @@
 ﻿namespace System
 {
     /// <summary>
-    /// For object, use the original Convert method
+    /// For object, use the original Convert class
     /// For string, use the original TryParse method
     /// </summary>
     public static class SafeConvertExtensions
