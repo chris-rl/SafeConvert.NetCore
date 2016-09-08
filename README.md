@@ -10,7 +10,7 @@ And the api is just the same as `System.Convert` class.
 
 
 ### NOTE
-Convert string "1" to bool will return `true`
+Convert from string "1" to bool will return `true`
 ```c#
 var b = "1".ToBoolean(); // Print true
 ```
