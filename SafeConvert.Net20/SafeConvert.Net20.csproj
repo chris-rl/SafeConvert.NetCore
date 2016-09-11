@@ -7,8 +7,8 @@
     <ProjectGuid>{EBDA129D-7CBB-4A0E-BFDB-217168465BDA}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SafeConvert.Net20</RootNamespace>
-    <AssemblyName>SafeConvert.Net20</AssemblyName>
+    <RootNamespace>System</RootNamespace>
+    <AssemblyName>SafeConvert</AssemblyName>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

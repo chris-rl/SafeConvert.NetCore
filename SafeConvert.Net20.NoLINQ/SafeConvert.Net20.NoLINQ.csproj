@@ -7,8 +7,8 @@
     <ProjectGuid>{312BF9B4-44A5-47ED-8330-A5280D808B32}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SafeConvert.Net20.NoLINQ</RootNamespace>
-    <AssemblyName>SafeConvert.Net20.NoLINQ</AssemblyName>
+    <RootNamespace>System</RootNamespace>
+    <AssemblyName>SafeConvert</AssemblyName>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
