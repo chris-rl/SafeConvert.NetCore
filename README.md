@@ -2,7 +2,7 @@
 
 The SafeConvert is a .NET library used to convert data between data types safely.
 
-Supports .NET 2.0 ( `#define NET20` or use [linqbridge](https://github.com/u0hz/linqbridge) ) and .NET 3.5+
+Supports .NET 2.0 ( `#define DISABLE_LINQ` or use [linqbridge](https://github.com/u0hz/linqbridge) ) and .NET 3.5+
 
 It uses `System.Convert` to convert object, and uses `TryParse` to convert string.
 
