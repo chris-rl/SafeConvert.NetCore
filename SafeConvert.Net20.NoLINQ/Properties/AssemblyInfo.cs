@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // 有关程序集的一般信息由以下
 // 控制。更改这些特性值可修改
 // 与程序集关联的信息。
-[assembly: AssemblyTitle("SafeConvert.Net20")]
+[assembly: AssemblyTitle("SafeConvert.Net20.NoLINQ")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("SafeConvert.Net20")]
+[assembly: AssemblyProduct("SafeConvert.Net20.NoLINQ")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // 如果此项目向 COM 公开，则下列 GUID 用于类型库的 ID
-[assembly: Guid("ebda129d-7cbb-4a0e-bfdb-217168465bda")]
+[assembly: Guid("312bf9b4-44a5-47ed-8330-a5280d808b32")]
 
 // 程序集的版本信息由下列四个值组成: 
 //

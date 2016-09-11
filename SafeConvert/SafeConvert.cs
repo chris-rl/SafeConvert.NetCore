@@ -7,7 +7,7 @@
     public static class SafeConvertExtensions
     {
         public static bool ToBoolean(
-#if !NET20
+#if !DISABLE_LINQ
             this
 #endif
                 object o, bool defaultValue = false)
@@ -23,7 +23,7 @@
         }
 
         public static bool ToBoolean(
-#if !NET20
+#if !DISABLE_LINQ
             this
 #endif
                 string s, bool defaultValue = false)
@@ -38,7 +38,7 @@
         }
 
         public static char ToChar(
-#if !NET20
+#if !DISABLE_LINQ
             this
 #endif
                 object o, char defaultValue = '\0')
@@ -54,7 +54,7 @@
         }
 
         public static char ToChar(
-#if !NET20
+#if !DISABLE_LINQ
             this
 #endif
                 string s, char defaultValue = '\0')
@@ -65,7 +65,7 @@
         }
 
         public static sbyte ToSByte(
-#if !NET20
+#if !DISABLE_LINQ
             this
 #endif
                 object o, sbyte defaultValue = 0)
@@ -81,7 +81,7 @@
         }
 
         public static sbyte ToSByte(
-#if !NET20
+#if !DISABLE_LINQ
             this
 #endif
                 string s, sbyte defaultValue = 0)
@@ -92,7 +92,7 @@
         }
 
         public static byte ToByte(
-#if !NET20
+#if !DISABLE_LINQ
             this
 #endif
                 object o, byte defaultValue = 0)
@@ -108,7 +108,7 @@
         }
 
         public static byte ToByte(
-#if !NET20
+#if !DISABLE_LINQ
             this
 #endif
                 string s, byte defaultValue = 0)
@@ -119,7 +119,7 @@
         }
 
         public static short ToInt16(
-#if !NET20
+#if !DISABLE_LINQ
             this
 #endif
                 object o, short defaultValue = 0)
@@ -135,7 +135,7 @@
         }
 
         public static short ToInt16(
-#if !NET20
+#if !DISABLE_LINQ
             this
 #endif
                 string s, short defaultValue = 0)
@@ -146,7 +146,7 @@
         }
 
         public static ushort ToUInt16(
-#if !NET20
+#if !DISABLE_LINQ
             this
 #endif
                 object o, ushort defaultValue = 0)
@@ -162,7 +162,7 @@
         }
 
         public static ushort ToUInt16(
-#if !NET20
+#if !DISABLE_LINQ
             this
 #endif
                 string s, ushort defaultValue = 0)
@@ -173,7 +173,7 @@
         }
 
         public static int ToInt32(
-#if !NET20
+#if !DISABLE_LINQ
             this
 #endif
                 object o, int defaultValue = 0)
@@ -189,7 +189,7 @@
         }
 
         public static int ToInt32(
-#if !NET20
+#if !DISABLE_LINQ
             this
 #endif
                 string s, int defaultValue = 0)
@@ -200,7 +200,7 @@
         }
 
         public static uint ToUInt32(
-#if !NET20
+#if !DISABLE_LINQ
             this
 #endif
                 object o, uint defaultValue = 0)
@@ -216,7 +216,7 @@
         }
 
         public static uint ToUInt32(
-#if !NET20
+#if !DISABLE_LINQ
             this
 #endif
                 string s, uint defaultValue = 0)
@@ -227,7 +227,7 @@
         }
 
         public static long ToInt64(
-#if !NET20
+#if !DISABLE_LINQ
             this
 #endif
                 object o, long defaultValue = 0)
@@ -243,7 +243,7 @@
         }
 
         public static long ToInt64(
-#if !NET20
+#if !DISABLE_LINQ
             this
 #endif
                 string s, long defaultValue = 0)
@@ -254,7 +254,7 @@
         }
 
         public static ulong ToUInt64(
-#if !NET20
+#if !DISABLE_LINQ
             this
 #endif
                 object o, ulong defaultValue = 0)
@@ -270,7 +270,7 @@
         }
 
         public static ulong ToUInt64(
-#if !NET20
+#if !DISABLE_LINQ
             this
 #endif
                 string s, ulong defaultValue = 0)
@@ -281,7 +281,7 @@
         }
 
         public static float ToSingle(
-#if !NET20
+#if !DISABLE_LINQ
             this
 #endif
                 object o, float defaultValue = 0)
@@ -297,7 +297,7 @@
         }
 
         public static float ToSingle(
-#if !NET20
+#if !DISABLE_LINQ
             this
 #endif
                 string s, float defaultValue = 0)
@@ -308,7 +308,7 @@
         }
 
         public static double ToDouble(
-#if !NET20
+#if !DISABLE_LINQ
             this
 #endif
                 object o, double defaultValue = 0)
@@ -325,7 +325,7 @@
         }
 
         public static double ToDouble(
-#if !NET20
+#if !DISABLE_LINQ
             this
 #endif
                 string s, double defaultValue = 0)
@@ -338,7 +338,7 @@
         }
 
         public static decimal ToDecimal(
-#if !NET20
+#if !DISABLE_LINQ
             this
 #endif
                 object o, decimal defaultValue = 0)
@@ -354,7 +354,7 @@
         }
 
         public static decimal ToDecimal(
-#if !NET20
+#if !DISABLE_LINQ
             this
 #endif
                 string s, decimal defaultValue = 0)
@@ -365,7 +365,7 @@
         }
 
         public static DateTime ToDateTime(
-#if !NET20
+#if !DISABLE_LINQ
             this
 #endif
                 object o, DateTime defaultValue = new DateTime())
@@ -381,7 +381,7 @@
         }
 
         public static DateTime ToDateTime(
-#if !NET20
+#if !DISABLE_LINQ
             this
 #endif
                 string s, DateTime defaultValue = new DateTime())
@@ -392,7 +392,7 @@
         }
 
         public static T To<T>(
-#if !NET20
+#if !DISABLE_LINQ
             this
 #endif
                 object o, T defaultValue = default(T))
@@ -408,7 +408,7 @@
         }
 
         public static object ChangeType(
-#if !NET20
+#if !DISABLE_LINQ
             this
 #endif
                 object o, Type t, object defaultValue = null)
@@ -424,7 +424,7 @@
         }
 
         public static TEnum ToEnum<TEnum>(
-#if !NET20
+#if !DISABLE_LINQ
             this
 #endif
                 string s, TEnum defaultValue = default(TEnum)) where TEnum : struct
@@ -441,7 +441,7 @@
         }
 
         public static TEnum ToEnum<TEnum>(
-#if !NET20
+#if !DISABLE_LINQ
             this
 #endif
                 object o, TEnum defaultValue = default(TEnum)) where TEnum : struct
@@ -457,7 +457,7 @@
         }
 
         public static bool[] ToBooleanArray(
-#if !NET20
+#if !DISABLE_LINQ
             this
 #endif
                 string[] ss)
@@ -480,7 +480,7 @@
         }
 
         public static byte[] ToByteArray(
-#if !NET20
+#if !DISABLE_LINQ
             this
 #endif
                 string[] ss)
@@ -503,7 +503,7 @@
         }
 
         public static char[] ToCharArray(
-#if !NET20
+#if !DISABLE_LINQ
             this
 #endif
                 string[] ss)
@@ -526,7 +526,7 @@
         }
 
         public static short[] ToInt16Array(
-#if !NET20
+#if !DISABLE_LINQ
             this
 #endif
                 string[] ss)
@@ -549,7 +549,7 @@
         }
 
         public static int[] ToInt32Array(
-#if !NET20
+#if !DISABLE_LINQ
             this
 #endif
                 string[] ss)
@@ -572,7 +572,7 @@
         }
 
         public static long[] ToInt64Array(
-#if !NET20
+#if !DISABLE_LINQ
             this
 #endif
                 string[] ss)
@@ -595,7 +595,7 @@
         }
 
         public static sbyte[] ToSByteArray(
-#if !NET20
+#if !DISABLE_LINQ
             this
 #endif
                 string[] ss)
@@ -618,7 +618,7 @@
         }
 
         public static ushort[] ToUInt16Array(
-#if !NET20
+#if !DISABLE_LINQ
             this
 #endif
                 string[] ss)
@@ -641,7 +641,7 @@
         }
 
         public static uint[] ToUInt32Array(
-#if !NET20
+#if !DISABLE_LINQ
             this
 #endif
                 string[] ss)
@@ -664,7 +664,7 @@
         }
 
         public static ulong[] ToUInt64Array(
-#if !NET20
+#if !DISABLE_LINQ
             this
 #endif
                 string[] ss)
@@ -687,7 +687,7 @@
         }
 
         public static float[] ToSingleArray(
-#if !NET20
+#if !DISABLE_LINQ
             this
 #endif
                 string[] ss)
@@ -710,7 +710,7 @@
         }
 
         public static double[] ToDoubleArray(
-#if !NET20
+#if !DISABLE_LINQ
             this
 #endif
                 string[] ss)
@@ -733,7 +733,7 @@
         }
 
         public static decimal[] ToDecimalArray(
-#if !NET20
+#if !DISABLE_LINQ
             this
 #endif
                 string[] ss)
@@ -756,7 +756,7 @@
         }
 
         public static DateTime[] ToDateTimeArray(
-#if !NET20
+#if !DISABLE_LINQ
             this
 #endif
                 string[] ss)
@@ -779,7 +779,7 @@
         }
 
         public static bool[] ToBooleanArray(
-#if !NET20
+#if !DISABLE_LINQ
             this
 #endif
                 object[] os)
@@ -802,7 +802,7 @@
         }
 
         public static byte[] ToByteArray(
-#if !NET20
+#if !DISABLE_LINQ
             this
 #endif
                 object[] os)
@@ -825,7 +825,7 @@
         }
 
         public static char[] ToCharArray(
-#if !NET20
+#if !DISABLE_LINQ
             this
 #endif
                 object[] os)
@@ -848,7 +848,7 @@
         }
 
         public static short[] ToInt16Array(
-#if !NET20
+#if !DISABLE_LINQ
             this
 #endif
                 object[] os)
@@ -871,7 +871,7 @@
         }
 
         public static int[] ToInt32Array(
-#if !NET20
+#if !DISABLE_LINQ
             this
 #endif
                 object[] os)
@@ -894,7 +894,7 @@
         }
 
         public static long[] ToInt64Array(
-#if !NET20
+#if !DISABLE_LINQ
             this
 #endif
                 object[] os)
@@ -917,7 +917,7 @@
         }
 
         public static sbyte[] ToSByteArray(
-#if !NET20
+#if !DISABLE_LINQ
             this
 #endif
                 object[] os)
@@ -940,7 +940,7 @@
         }
 
         public static ushort[] ToUInt16Array(
-#if !NET20
+#if !DISABLE_LINQ
             this
 #endif
                 object[] os)
@@ -963,7 +963,7 @@
         }
 
         public static uint[] ToUInt32Array(
-#if !NET20
+#if !DISABLE_LINQ
             this
 #endif
                 object[] os)
@@ -986,7 +986,7 @@
         }
 
         public static ulong[] ToUInt64Array(
-#if !NET20
+#if !DISABLE_LINQ
             this
 #endif
                 object[] os)
@@ -1009,7 +1009,7 @@
         }
 
         public static float[] ToSingleArray(
-#if !NET20
+#if !DISABLE_LINQ
             this
 #endif
                 object[] os)
@@ -1032,7 +1032,7 @@
         }
 
         public static double[] ToDoubleArray(
-#if !NET20
+#if !DISABLE_LINQ
             this
 #endif
                 object[] os)
@@ -1055,7 +1055,7 @@
         }
 
         public static decimal[] ToDecimalArray(
-#if !NET20
+#if !DISABLE_LINQ
             this
 #endif
                 object[] os)
@@ -1078,7 +1078,7 @@
         }
 
         public static DateTime[] ToDateTimeArray(
-#if !NET20
+#if !DISABLE_LINQ
             this
 #endif
                 object[] os)
