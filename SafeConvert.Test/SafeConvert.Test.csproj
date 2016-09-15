@@ -57,9 +57,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SafeConvert\SafeConvert.csproj">
-      <Project>{c8b5871a-bdff-4fda-9a61-61a68c8e15ea}</Project>
-      <Name>SafeConvert</Name>
+    <ProjectReference Include="..\SafeConvert.Net20\SafeConvert.Net20.csproj">
+      <Project>{ebda129d-7cbb-4a0e-bfdb-217168465bda}</Project>
+      <Name>SafeConvert.Net20</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>
