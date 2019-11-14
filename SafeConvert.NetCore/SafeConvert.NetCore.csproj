@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>1.0.0</Version>
+    <Description>A .Net Core port from https://github.com/u0hz/SafeConvert</Description>
+    <Authors>chris-rl</Authors>
+    <Company>Rocketloop GmbH</Company>
+    <PackageTags>Convert .NetCore</PackageTags>
+    <RepositoryUrl>https://github.com/chris-rl/SafeConvert.NetCore</RepositoryUrl>
+    <Copyright>Copyright @ 2019</Copyright>
+  </PropertyGroup>
+
+</Project>

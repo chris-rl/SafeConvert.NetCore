@@ -33,8 +33,7 @@
             // when parsed as '1', return true
             if (ToInt32(s) == 1) return true;
 
-            bool n;
-            return bool.TryParse(s.Trim(), out n) ? n : defaultValue;
+            return bool.TryParse(s.Trim(), out var n) ? n : defaultValue;
         }
 
         public static char ToChar(
@@ -60,8 +59,7 @@
                 string s, char defaultValue = '\0')
         {
             if (s == null) return defaultValue;
-            char n;
-            return char.TryParse(s.Trim(), out n) ? n : defaultValue;
+            return char.TryParse(s.Trim(), out var n) ? n : defaultValue;
         }
 
         public static sbyte ToSByte(
@@ -87,8 +85,7 @@
                 string s, sbyte defaultValue = 0)
         {
             if (s == null) return defaultValue;
-            sbyte n;
-            return sbyte.TryParse(s.Trim(), out n) ? n : defaultValue;
+            return sbyte.TryParse(s.Trim(), out var n) ? n : defaultValue;
         }
 
         public static byte ToByte(
@@ -114,8 +111,7 @@
                 string s, byte defaultValue = 0)
         {
             if (s == null) return defaultValue;
-            byte n;
-            return byte.TryParse(s.Trim(), out n) ? n : defaultValue;
+            return byte.TryParse(s.Trim(), out var n) ? n : defaultValue;
         }
 
         public static short ToInt16(
@@ -141,8 +137,7 @@
                 string s, short defaultValue = 0)
         {
             if (s == null) return defaultValue;
-            short n;
-            return short.TryParse(s.Trim(), out n) ? n : defaultValue;
+            return short.TryParse(s.Trim(), out var n) ? n : defaultValue;
         }
 
         public static ushort ToUInt16(
@@ -168,8 +163,7 @@
                 string s, ushort defaultValue = 0)
         {
             if (s == null) return defaultValue;
-            ushort n;
-            return ushort.TryParse(s.Trim(), out n) ? n : defaultValue;
+            return ushort.TryParse(s.Trim(), out var n) ? n : defaultValue;
         }
 
         public static int ToInt32(
@@ -195,8 +189,7 @@
                 string s, int defaultValue = 0)
         {
             if (s == null) return defaultValue;
-            int n;
-            return int.TryParse(s.Trim(), out n) ? n : defaultValue;
+            return int.TryParse(s.Trim(), out var n) ? n : defaultValue;
         }
 
         public static uint ToUInt32(
@@ -222,8 +215,7 @@
                 string s, uint defaultValue = 0)
         {
             if (s == null) return defaultValue;
-            uint n;
-            return uint.TryParse(s.Trim(), out n) ? n : defaultValue;
+            return uint.TryParse(s.Trim(), out var n) ? n : defaultValue;
         }
 
         public static long ToInt64(
@@ -249,8 +241,7 @@
                 string s, long defaultValue = 0)
         {
             if (s == null) return defaultValue;
-            long n;
-            return long.TryParse(s.Trim(), out n) ? n : defaultValue;
+            return long.TryParse(s.Trim(), out var n) ? n : defaultValue;
         }
 
         public static ulong ToUInt64(
@@ -276,8 +267,7 @@
                 string s, ulong defaultValue = 0)
         {
             if (s == null) return defaultValue;
-            ulong n;
-            return ulong.TryParse(s.Trim(), out n) ? n : defaultValue;
+            return ulong.TryParse(s.Trim(), out var n) ? n : defaultValue;
         }
 
         public static float ToSingle(
@@ -303,8 +293,7 @@
                 string s, float defaultValue = 0)
         {
             if (s == null) return defaultValue;
-            float n;
-            return float.TryParse(s.Trim(), out n) ? n : defaultValue;
+            return float.TryParse(s.Trim(), out var n) ? n : defaultValue;
         }
 
         public static double ToDouble(
@@ -360,8 +349,7 @@
                 string s, decimal defaultValue = 0)
         {
             if (s == null) return defaultValue;
-            decimal n;
-            return decimal.TryParse(s.Trim(), out n) ? n : defaultValue;
+            return decimal.TryParse(s.Trim(), out var n) ? n : defaultValue;
         }
 
         public static DateTime ToDateTime(
@@ -387,15 +375,14 @@
                 string s, DateTime defaultValue = new DateTime())
         {
             if (s == null) return defaultValue;
-            DateTime n;
-            return DateTime.TryParse(s.Trim(), out n) ? n : defaultValue;
+            return DateTime.TryParse(s.Trim(), out var n) ? n : defaultValue;
         }
 
         public static T To<T>(
 #if !DISABLE_LINQ
             this
 #endif
-                object o, T defaultValue = default(T))
+                object o, T defaultValue = default)
         {
             try
             {
@@ -427,9 +414,9 @@
 #if !DISABLE_LINQ
             this
 #endif
-                string s, TEnum defaultValue = default(TEnum)) where TEnum : struct
+                string s, TEnum defaultValue = default) where TEnum : struct
         {
-            if (s == null) return default(TEnum);
+            if (s == null) return default;
             try
             {
                 return (TEnum)Enum.Parse(typeof(TEnum), s.Trim());
@@ -444,7 +431,7 @@
 #if !DISABLE_LINQ
             this
 #endif
-                object o, TEnum defaultValue = default(TEnum)) where TEnum : struct
+                object o, TEnum defaultValue = default) where TEnum : struct
         {
             try
             {
